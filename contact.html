@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html long="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>contact.html</title>
+        <link rel="stylesheet" href="C:\Users\yosra\Desktop\yosra.abid.td10.html\feuille-css\style.css" />
+        <style>
+      h1{       
+text-shadow: 4px 4px 4px #F13C20; 
+
+text-decoration:underline; 
+
+Text-Align: Center; 
+
+text-transform:uppercase; 
+
+Font-Weight: Bold; 
+                   }
+body{
+            background-image: url(./photo-1541140134513-85a161dc4a00.jfif);
+            height: 100vh;
+    background-size: cover;
+    background-position: center;
+        }
+  .loginbox{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:350px;
+    height: :420px;
+    padding: 0px 0px;
+    box-sizing:border-box;
+    background-color:  rgb(112, 110, 110);
+}       
+.loginbox input[type=text] ,
+.loginbox input[type=number],
+.loginbox input[type=date],
+.loginbox input[type=tel],
+.loginbox input[type=email],
+.loginbox input[type=url]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3f3b3b;
+  color: rgb(112, 110, 110);
+}
+.loginbox input[type=submit],
+.loginbox input[type=reset]{
+    background-color: #3f3b3b;
+}
+.loginbox textarea{
+    background-color: #3f3b3b;
+}
+.loginbox select{
+    background-color: #3f3b3b;
+}
+label{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Nous Contacter</h1>
+        <div class="loginbox">
+        <form method="post" action="traitement.php" id="customer" >
+            <fieldset style="width: 400;"  >
+                <legend>coordonnées</legend>
+                <table>
+                    <tr>
+           <td> <label for="text1">Nom</label></td>
+            <td><input id="text1" type="text" name="nom" size="10" placeholder="votre nom" required></td>
+        </tr>
+        <tr>
+            <td><label for="text2">Prenom</label></td>
+            <td><input id="text2" type="text" name="prenom" size="10" placeholder="votre prénom" required></td>
+        </tr>
+        <tr>
+        <td><label for="text3">CIN</label></td>
+        <td><input id="text3" type="number" name="cin" pattern="[0-9]{8}" title="cin avec 8 chiffres"></td>
+    </tr>
+    <tr>
+    <td><label for="sexe">Sexe</label></td>
+    <td>
+    <input   value="text4" id="text4" type="radio" name="sexe" >
+      <label for="text4">homme</label>
+    <input   value="text5" id="text5" type="radio" name="sexe" >
+      <label for="text5">femme</label>
+</td>
+</tr>
+<tr>
+<td><label for="text6">Date de naissance</label></td>
+<td><input id="text6" type="date" name="datenaissance" ></td>
+</tr>
+<tr>
+<td><label for="age">Age</label></td>
+<td><input id="age" type="number" name="age" min="18" max="99"></td>
+</tr>
+<tr>
+<td><label for="adr">Adresse</label></td>
+<td><textarea id="adr" name="adresse" type="adresse"></textarea></td>
+</tr>
+<tr>
+<td><label for="vil">Ville</label></td>
+<td><select id="vil" name="vil" >
+    <option value="sfax" selected >sfax</option>
+    <option value="tunis">tunis</option>
+    <option value="sousse">sousse</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="num">Telephone</label></td>
+<td><input id="num" type="tel" name="num" maxlength="10"></td>
+</tr>
+<tr>
+<td><label for="Email">Email</label></td>
+<td><input id="Email" type="email" name="Email" ></td>
+
+</tr>
+<tr>
+<td><label for="url">Site web</label></td>
+<td><input id="url" type="url" name="url" ></td>
+</tr>
+<tr>
+    <td></td>
+<td><input type="submit" value="Envoyer" >
+<input type="reset" value="Annuler" ></td>
+</tr>
+</table>
+</fieldset>
+</form>
+</div>
+    </body>
+</html>

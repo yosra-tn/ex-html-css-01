@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>avis.html</title>
+	<link rel="stylesheet" href="C:\Users\yosra\Desktop\yosra.abid.td10.html\feuille-css\style1.css" />
+	<style>
+		    body{ 
+    
+	background-image: url(./photo-1541140134513-85a161dc4a00\ -\ Copie.jfif); 
+
+	height: 100vh; 
+
+background-size: cover; 
+
+background-position: center; 
+
+} 
+h1{  
+
+ 
+ 
+
+text-shadow: 4px 4px 4px #F13C20;  
+
+ 
+ 
+
+text-decoration:underline;  
+
+ 
+ 
+
+Text-Align: Center;  
+
+ 
+ 
+
+text-transform:uppercase;  
+
+ 
+ 
+
+Font-Weight: Bold;  
+
+ 
+ 
+
+}  
+
+
+		.loginbox{ 
+
+	position: absolute; 
+
+	top:50%; 
+
+	left:50%; 
+
+	transform: translate(-50%,-50%); 
+
+	width:350px; 
+
+	height: :420px; 
+
+	padding: 80px 40px; 
+
+	box-sizing:border-box; 
+
+	background-color:  rgb(112, 110, 110); 
+
+}  
+
+.loginbox input[type=text], 
+
+.loginbox input[type=email] 
+
+{ 
+
+  width: 100%; 
+
+  padding: 12px 20px; 
+
+  margin: 8px 0; 
+
+  box-sizing: border-box; 
+
+  border: none; 
+
+  background-color: #3f3b3b; 
+
+  color: rgb(112, 110, 110); 
+
+} 
+
+.loginbox textarea{ 
+
+	background-color: #3f3b3b; 
+
+} 
+
+.loginbox select{ 
+
+	background-color: #3f3b3b; 
+
+} 
+
+.loginbox input[type=submit], 
+
+.loginbox input[type=reset]{ 
+
+	background-color: #3f3b3b; 
+
+} 
+.loginbox input[type=number],
+.loginbox input[type=date],
+.loginbox input[type=tel],
+.loginbox input[type=url]
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+background-color: #3f3b3b;
+color: rgb(112, 110, 110);
+}
+
+label{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+}
+	</style>
+</head>
+<body>
+	<h1>Donnez votre avis sur notre site</h1>
+	<br>
+	<br>
+	<div class="loginbox">
+	<form method="POST" action="traitement-avis.php">
+		<label for="nom">Nom:</label>
+		<input type="text" id="nom" name="nom" required><br><br>
+
+		<label for="email">Adresse e-mail:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="avis">Votre avis:</label><br>
+		<textarea id="avis" name="avis" rows="4" cols="35"></textarea><br><br>
+
+		<label for="note">Note:</label>
+		<select id="note" name="note">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select><br><br>
+
+		<input type="submit" value="Envoyer">
+
+	</form>
+</div>
+</body>
+</html>
